@@ -1,0 +1,178 @@
+/*utilized root function to assign colors to be used in different parts of the page*/
+:root {
+  --dark:#2e2e2e;
+  --teal: rgb(156, 241, 216);
+  --navlink-color: #b9c6ae;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    background-color: rgb(201, 203, 206);
+  }
+  /*assinged various attributes to the header including using flexbox*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .1%;
+    background-color: var(--dark);
+    color: var(--teal);
+    font-weight: 600;
+    font-style: initial;
+    padding-left: 5%;
+    padding-right: 2%;
+  }
+
+  
+  h1 {
+    font-size: 300%;
+  }
+  
+  h2 {
+    margin: 2% 1%;
+    font-size: 275%;
+    text-decoration: underline;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style: none;
+    position: relative;
+  }
+  
+  nav li {
+    position: relative;
+  }
+ 
+  nav a {
+    color: var(--teal);
+    font-weight: bold;
+    text-decoration: none;
+  }
+/*used code to give my nav bar items neat features when hovering over with cursor*/
+  nav a:hover {
+    color: ivory;
+  }
+
+  nav a::before {
+    content:"" ;
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: var(--teal);
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 100ms;
+  }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+  
+  main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 1200px;
+    margin: 2% auto;
+  }
+
+  p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 130%;
+    }
+  
+  section {
+    flex: 1 1 0;
+    padding-right: 10%;
+    
+  }
+
+  .about-me {
+    padding-bottom: 12em;
+    border-bottom: 1px solid var(--dark);
+    border-color: var(--dark);
+  }
+
+  .my-work {
+    padding-bottom: 12em;
+    border-bottom: 1px solid var(--dark);
+    border-color: var(--dark);
+  }
+
+  .contact-me {
+    padding-bottom: 6em;
+    border-bottom: 1px solid var(--dark);
+    border-color: var(--dark);
+  }
+
+  img {
+    width: 20%;
+    height: auto;
+    margin: 0 5%;
+    float: left;
+    border-style: solid;
+    border-color: var(--dark);
+  }
+
+  article p {
+    margin: 2% 0;
+    font-size: 110%;
+  }
+  
+  article ul {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-size: 110%;
+    list-style: circle;
+  }
+  
+  
+  aside {
+    width: 25%;
+  }
+  
+  aside h2 {
+    font-size: 150%;
+  }
+  
+  input,
+  button {
+    width: 100%;
+    margin: 2% 0;
+    padding: 1%;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: var(--dark);
+    color: var(--teal);
+  
+  /*media query to change layout when viewing on smaller window/screen*/
+  
+  @media screen and (max-width: 768px) {
+    header,
+    main {
+      flex-direction: column;
+      background-color: red;
+      
+    }
+  
+    section {
+      padding-right: 0;
+      background-color: lightblue;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
