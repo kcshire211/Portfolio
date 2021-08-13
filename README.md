@@ -1,27 +1,5 @@
 # 02 Advanced CSS: Portfolio
 
-## Your Task
-
-Welcome to this week's homework! This is an even-numbered week, so you won't be given any starter code. Instead, you'll create a web application from scratch! This week, you'll build a portfolio page, which you can add to as the course progresses. 
-
-A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. Students who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search after the boot camp. This last point can’t be stressed enough: having several deployed projects is a minimum requirement to receive an initial interview at many companies. 
-
-With these points in mind, in this homework you’ll set yourself up for future success by applying the core skills you've recently learned: flexbox, media queries, and CSS variables. You'll get to practice your new skills while creating something that you will use during your job search. It’s a win-win that you'll likely be grateful for in the future!
-
-**Note:** If you don't have enough web applications to showcase at this point, use placeholder images and names. You can change them to real applications as you create them later in the course.
-
-Let’s take a look at what a user story written from the perspective of a hiring manager might look like. As you might remember from your first homework, we follow the AS AN / I WANT / SO THAT format. 
-
-
-## User Story
-
-```
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-```
-
-
 ## Acceptance Criteria
 
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
@@ -43,54 +21,31 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 
-## Mock-Up
+## My solutions for the Acceptance Criteria:
 
-The following animation shows the web application's appearance and functionality:
+## HTML File
 
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
+In the head of the html file I set standards for the page using meta elements. 
+In the body for the file, I created a header that includes my name as well as an unordered
+list for nav bar items.
+Outside of the header, the body is composed of three sections. Each section corresponds to  
+one of the nav items which are about me, my work, and contact me. 
+In the about me section, I inlcuded a self picture and a brief paragraph describing myself. 
+The my work section is made up of place holder images that will eventually contain my work once created.
+The contact me section has an image as well as a linked unordered list of my email, linked in, and GitHub. 
+I included a footer with the message "Thank you for visiting!"
 
+## CSS File
 
-## Grading Requirements
+I included a :root tag atop my css file to indicate 3 colors I would be using throughout the code.
+In the header, I used CSS to change the font family and style of my name and nav items. 
+I also used CSS to create an effect when hovering the cursor above each item. Once clicked,
+the nav items link you to the corresponding section on the page. 
+CSS allowed me to format padding and borders around each image and section. A bottom border 
+separates each section as well. I used a flexbox to help position items on my page.
+The images in the my work section are different in size with the first image being larger.
+The images in this section also have links imbeded. The links don't go anywhere at this time as this 
+section is placeholders. 
+I used a media query at the bottom of the css file that changes the aspect and layout of the page when 
+viewed from a smaller screen. 
 
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme with description, screenshot, link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
