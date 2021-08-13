@@ -154,14 +154,14 @@ body {
     padding: 2%;
     background-color: var(--dark);
     color: var(--teal);
-  
+  }
   /*media query to change layout when viewing on smaller window/screen*/
   
   @media screen and (max-width: 768px) {
-    header,
+    header, 
     main {
       flex-direction: column;
-      background-color: red;
+      
       
     }
   
@@ -175,4 +175,3 @@ body {
       text-align: center;
     }
   }
-}
