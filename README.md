@@ -49,3 +49,4 @@ section is placeholders.
 I used a media query at the bottom of the css file that changes the aspect and layout of the page when 
 viewed from a smaller screen. 
 
+![screenshot of my webpage](./Assets/images/screenshot.png)
